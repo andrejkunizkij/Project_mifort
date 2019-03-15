@@ -1,0 +1,46 @@
+div {
+  width: 350px;
+  padding: 110px 0 0;
+  margin: auto;
+}
+form {
+  position: relative;
+  background: #FFFFFF;
+  padding: 25px;
+  border: 1px ;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+form input {
+  font-family: "Comic Sans MS";
+  background: #FFFFFF;
+  width: 250px;
+  margin: 0 10px 15px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: text;
+  border: 0;
+  border-bottom: 1px solid #DCDCDC;
+}
+form button {
+  font-family: "Comic Sans MS";
+  text-transform: uppercase;
+  background: #F5F5F5;
+  width: 280px;
+  border: 0;
+  padding: 15px;
+  color: #696969;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 15px 10px auto;
+}
+form button:hover,.form button:active,.form button:focus {
+  background: #D3D3D3;
+}
+body {
+  background: #F5F5F5;
+}
+p{
+  font-family: "Comic Sans MS";
+  color: #696969;
+  font-size: 14px;
+}
