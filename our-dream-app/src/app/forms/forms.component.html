@@ -1,10 +1,20 @@
 <p align="center">Sign In</p>
-<div>
+<div *ngIf="toggleFlag; else elseBlock">
     <form>
       <input type="text" placeholder="E-mail" required/>
       <input type="password" placeholder="Password" required/>
       <p align="right">Forgot password?</p>
       <button>Sign In</button>
-      <p align="center">Don't have an account? <a href="#"> Sign Up </a></p>
+      <p align="center">Don't have an account? <a href="#"(click)="signup()">Sign Up</a></p>
     </form>
 </div>
+<ng-template #elseBlock>
+  <div>
+    <form>
+      <input type="text" placeholder="Full name" required/>
+      <input type="text" placeholder="E-mail" required/>
+      <button>Sign Up</button>
+      <p align="center">Already have an account? <a href="#" (click)="signup()">Sign In</a></p>
+    </form>
+  </div>
+</ng-template>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-forms',
@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit {
+  toggleFlag: boolean = true;
 
-  constructor() { }
+  signup() {
+    this.toggleFlag = !this.toggleFlag;
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
