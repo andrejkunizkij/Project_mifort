@@ -1,3 +1,4 @@
+@import "~src/styles.scss";
 div {
   width: 350px;
   padding: 110px 0 0;
@@ -5,42 +6,42 @@ div {
 }
 form {
   position: relative;
-  background: #FFFFFF;
+  background: $gainsboro;
   padding: 25px;
   border: 1px ;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-form input {
-  font-family: "Comic Sans MS";
-  background: #FFFFFF;
+input {
+  font-family: $font;
+  background: $white;
   width: 250px;
   margin: 0 10px 15px;
   padding: 15px;
   font-size: 14px;
   cursor: text;
   border: 0;
-  border-bottom: 1px solid #DCDCDC;
+  border-bottom: 1px solid $gainsboro;
 }
-form button {
-  font-family: "Comic Sans MS";
+button {
+  font-family: $font;
   text-transform: uppercase;
-  background: #F5F5F5;
+  background: $black_rose;
   width: 280px;
   border: 0;
   padding: 15px;
-  color: #696969;
+  color: $white_smoke;
   font-size: 14px;
   cursor: pointer;
   margin: 15px 10px auto;
 }
-form button:hover,.form button:active,.form button:focus {
-  background: #D3D3D3;
-}
-body {
-  background: #F5F5F5;
+button:hover,.form button:active,.form button:focus {
+  background: $boysenberry;
 }
 p{
-  font-family: "Comic Sans MS";
-  color: #696969;
+  font-family: $font;
+  color: $dim_gray;
   font-size: 14px;
+}
+a{
+  color: $dim_gray;
 }
