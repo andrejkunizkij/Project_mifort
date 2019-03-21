@@ -3,9 +3,9 @@
     <form>
       <input type="text" placeholder="E-mail" required/>
       <input type="password" placeholder="Password" required/>
-      <p align="right"><a href="#">Forgot password?</a></p>
+      <p align="right"><a routerLink="/reset">Forgot password?</a></p>
       <button>Sign In</button>
-      <p align="center">Don't have an account? <a href="#"(click)="signup()">Sign Up</a></p>
+      <p align="center">Don't have an account? <a routerLink="/sign" (click)="signup()">Sign Up</a></p>
     </form>
 </div>
 <ng-template #elseBlock>
@@ -16,7 +16,7 @@
       <input type="text" placeholder="E-mail" required/>
       <input type="password" placeholder="Password" required/>
       <button>Sign Up</button>
-      <p align="center">Already have an account? <a href="#" (click)="signup()">Sign In</a></p>
+      <p align="center">Already have an account? <a routerLink="/sign" (click)="signup()">Sign In</a></p>
     </form>
   </div>
 </ng-template>
