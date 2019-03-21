@@ -1,0 +1,36 @@
+@import "~src/styles.scss";
+div {
+  width: 270px;
+  padding: 200px 0 0;
+  margin: auto;
+}
+form {
+  position: relative;
+  background: $white;
+  padding: 25px;
+}
+button {
+  font-family: $font;
+  text-transform: uppercase;
+  background: $black_rose;
+  width: 200px;
+  border: 0;
+  padding: 15px;
+  color: $white_smoke;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 15px 10px auto;
+}
+button:hover,.form button:active,.form button:focus {
+  background: $boysenberry;
+}
+p{
+
+  padding: 0 60px;
+  font-family: $font;
+  color: $dim_gray;
+  font-size: 20px;
+}
+a{
+  color: $dim_gray;
+}
